@@ -1,5 +1,5 @@
 # Email Base Layout ✨
-[![N|Solid](https://raw.githubusercontent.com/DianyelaMaldonado/email-base-layout/development/src/assets/BM-logo.png?token=AM5G2YQORPSGV27UKROZTDLBNIU4S)](https://heyblackmagic.com/)
+[![N|Solid](https://raw.githubusercontent.com/DianyelaMaldonado/email-base-layout/development/src/assets/BM-logo.png?token=AM5G2YUBVWL2PQKKHN3FG2LBNITGU)](https://heyblackmagic.com/)
 
 Re-usable email template fully tested in:
 
@@ -17,7 +17,7 @@ Re-usable email template fully tested in:
 - Yahoo! Mail (Firefox)
 
 ## How to use in your awesome Craft CMS project:
-#### Templates:
+### Templates:
 
 You will find the email layout and the example Express Forms template within `templates` directory.
 
@@ -32,6 +32,51 @@ You will find the email layout and the example Express Forms template within `te
 
 - Go to your Express form in `/admin/express-forms/forms` to configure your form notification template.
 - Click on your form name.
-- In the **Notifications** section, click in the Admin Notification dropdown and select the example **Contact Us** template.
+- In the **Notifications** section, click in the **Admin Notification** dropdown and select the example **Contact Us** template.
 
 ![alt text](https://raw.githubusercontent.com/DianyelaMaldonado/email-base-layout/development/src/screenshots/admin-notification-select.png?token=AM5G2YW5BU2JB62FRTCXLLDBNIU7A)
+
+### Template customization:
+
+The email layout is ready to be customized through the CMS, **THIS IS NOT MANDATORY** but it would be more magical if you use it like this 🦯🎩✨
+
+#### Fields
+The template can have these custom elements:
+- Logo
+- Header background
+- Body background
+- Footer background
+
+So we will need to create a field for each of them. So, go to `/admin/settings/fields` and create a new group of fields, I recommend to name it "Email layout" but you can use the name you prefer. Inside that group we will create these fields:
+
+| Field Name | Handle | Type |
+| ------ | ------ | ------ |
+| Logo | logo | asset |
+| Header Background Color | headerBgColor | color |
+| Body Background Color | bodyBgColor | color |
+| Footer Background Color | footerBgColor | color |
+
+NOTE: In the Logo field description be sure to request an image in PNG/JPG format.
+
+![alt text](https://raw.githubusercontent.com/DianyelaMaldonado/email-base-layout/development/src/screenshots/fields.png?token=AM5G2YW5BU2JB62FRTCXLLDBNIU7A)
+
+#### Globals
+
+- Go to `/admin/settings/globals`, click on `New global set` and create a global called **Email Layout**, be sure the handle is `emailLayout`.
+- Drag and drop all the fields you created previously to the global.
+- Click `Save`.
+
+![alt text](https://raw.githubusercontent.com/DianyelaMaldonado/email-base-layout/development/src/screenshots/global.png?token=AM5G2YW5BU2JB62FRTCXLLDBNIU7A)
+
+- Go to `/admin/globals/default/emailLayout` to customize your email basic elements.
+
+![alt text](https://raw.githubusercontent.com/DianyelaMaldonado/email-base-layout/development/src/screenshots/global-2.png?token=AM5G2YW5BU2JB62FRTCXLLDBNIU7A)
+
+### Form submission
+Whenever your Express form is submitted, the customized template will be sent:
+![alt text](https://raw.githubusercontent.com/DianyelaMaldonado/email-base-layout/development/src/screenshots/example-email.png?token=AM5G2YW5BU2JB62FRTCXLLDBNIU7A)
+
+NOTE: If you test your form in your local environment, you will see a broken image. Don´t worry, it will work fine when you deploy to a higher environment 🚀
+
+-----
+MAKING THE INTERNET A HAPPIER PLACE 💫
