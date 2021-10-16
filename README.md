@@ -1,5 +1,5 @@
 # Email Base Layout ✨
-[![N|Solid](https://raw.githubusercontent.com/DianyelaMaldonado/email-base-layout/development/src/assets/BM-logo.png?token=AM5G2YUBVWL2PQKKHN3FG2LBNITGU)](https://heyblackmagic.com/)
+[![N|Solid](https://github.com/DianyelaMaldonado/email-base-layout/blob/development/src/assets/BM-logo.png?raw=true)](https://heyblackmagic.com/)
 
 Re-usable email template fully tested in:
 
@@ -28,13 +28,13 @@ You will find the email layout and the example Express Forms template within `te
 - Click `Update`.
 - The example **Contact Us** template will be shown below.
 
-![alt text](https://raw.githubusercontent.com/DianyelaMaldonado/email-base-layout/development/src/screenshots/template-directory-path.png?token=AM5G2YW5BU2JB62FRTCXLLDBNIU7A)
+![alt text](https://github.com/DianyelaMaldonado/email-base-layout/blob/development/src/screenshots/template-directory-path.png?raw=true)
 
 - Go to your Express form in `/admin/express-forms/forms` to configure your form notification template.
 - Click on your form name.
 - In the **Notifications** section, click in the **Admin Notification** dropdown and select the example **Contact Us** template.
 
-![alt text](https://raw.githubusercontent.com/DianyelaMaldonado/email-base-layout/development/src/screenshots/admin-notification-select.png?token=AM5G2YW5BU2JB62FRTCXLLDBNIU7A)
+![alt text](https://github.com/DianyelaMaldonado/email-base-layout/blob/development/src/screenshots/admin-notification-select.png?raw=true)
 
 ### Template customization:
 
@@ -58,7 +58,7 @@ So we will need to create a field for each of them. So, go to `/admin/settings/f
 
 NOTE: In the Logo field description be sure to request an image in PNG/JPG format.
 
-![alt text](https://raw.githubusercontent.com/DianyelaMaldonado/email-base-layout/development/src/screenshots/fields.png?token=AM5G2YW5BU2JB62FRTCXLLDBNIU7A)
+![alt text](https://github.com/DianyelaMaldonado/email-base-layout/blob/development/src/screenshots/fields.png?raw=true)
 
 #### Globals
 
@@ -66,15 +66,15 @@ NOTE: In the Logo field description be sure to request an image in PNG/JPG forma
 - Drag and drop all the fields you created previously to the global.
 - Click `Save`.
 
-![alt text](https://raw.githubusercontent.com/DianyelaMaldonado/email-base-layout/development/src/screenshots/global.png?token=AM5G2YW5BU2JB62FRTCXLLDBNIU7A)
+![alt text](https://github.com/DianyelaMaldonado/email-base-layout/blob/development/src/screenshots/global.png?raw=true)
 
 - Go to `/admin/globals/default/emailLayout` to customize your email basic elements.
 
-![alt text](https://raw.githubusercontent.com/DianyelaMaldonado/email-base-layout/development/src/screenshots/global-2.png?token=AM5G2YW5BU2JB62FRTCXLLDBNIU7A)
+![alt text](https://github.com/DianyelaMaldonado/email-base-layout/blob/development/src/screenshots/global-2.png?raw=true)
 
 ### Form submission
 Whenever your Express form is submitted, the customized template will be sent:
-![alt text](https://raw.githubusercontent.com/DianyelaMaldonado/email-base-layout/development/src/screenshots/example-email.png?token=AM5G2YW5BU2JB62FRTCXLLDBNIU7A)
+![alt text](https://github.com/DianyelaMaldonado/email-base-layout/blob/development/src/screenshots/example-email.png?raw=true)
 
 NOTE: If you test your form in your local environment, you will see a broken image. Don´t worry, it will work fine when you deploy to a higher environment 🚀
 
