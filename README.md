@@ -1,5 +1,5 @@
 # Email Base Layout ✨
-[![N|Solid](https://raw.githubusercontent.com/DianyelaMaldonado/email-base-layout/development/src/assets/BM-logo.png?token=AM5G2YUBVWL2PQKKHN3FG2LBNITGU)](https://heyblackmagic.com/)
+[![N|Solid](https://raw.githubusercontent.com/DianyelaMaldonado/email-base-layout/development/src/assets/BM-logo.png?token=AM5G2YQORPSGV27UKROZTDLBNIU4S)](https://heyblackmagic.com/)
 
 Re-usable email template fully tested in:
 
@@ -25,4 +25,4 @@ Re-usable email template fully tested in:
 - Click `Update`.
 - The example **Contact Us** template will be shown below.
 
-![alt text](https://raw.githubusercontent.com/DianyelaMaldonado/email-base-layout/development/src/screenshots/template-directory-path.png)
+![alt text](https://raw.githubusercontent.com/DianyelaMaldonado/email-base-layout/development/src/screenshots/template-directory-path.png?token=AM5G2YW5BU2JB62FRTCXLLDBNIU7A)
