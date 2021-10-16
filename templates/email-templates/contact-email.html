@@ -1,0 +1,63 @@
+---
+name: 'Contact Us'
+description: 'Contact us email notification template.'
+fromName: '{{ craft.app.systemSettings.getSettings("email").fromName }}'
+fromEmail: '{{ craft.app.systemSettings.getSettings("email").fromEmail }}'
+replyTo: '{{ craft.app.systemSettings.getSettings("email").fromEmail }}'
+cc: null
+bcc: null
+subject: 'New submission from your {{ form.name }} form'
+includeAttachments: true
+---
+{% extends "_email-layout" %}
+{% block content %}
+<p style="text-transform: uppercase; font-family: 'Josefin Sans', sans-serif;">A user has submitted the contact form</p>
+<p>Submission came in on {{ dateCreated|date('l, F j, Y \\a\\t g:ia') }}.</p>
+<p> Here are the details:</p>
+{% set total = form.fields|length %}
+<table style="background-color: #ffffff; border-bottom: 1px solid #252525;">
+    {% for field in form.fields %}
+        {% if loop.index == total %}
+            {% if field.valueAsString %}
+                <tr>
+                    <td style="padding: 0.5rem;">
+                        <span class="fsm-16" style="line-height: 18px;">
+                            {{ field.label }}:
+                        </span>
+                    </td>
+                    <td style="padding: 0.5rem;"> </td>
+                    <td style="padding: 0.5rem;">
+                        <span class="fsm-16" style="line-height: 18px;">
+                            {% if field.type == "email" %}
+                                <a class="fsm-16" href="mailto:{{ field.valueAsString }}" style="color: #2E81BB; text-decoration:none; font-style:normal;">{{ field.valueAsString }}</a>
+                            {% else %}
+                                {{ field.valueAsString }}
+                            {% endif %}
+                        </span>
+                    </td>
+                </tr>
+            {% endif %}
+        {% else %}
+            {% if field.valueAsString %}
+                <tr>
+                    <td style="padding: 0.5rem;border-bottom: 1px solid #252525;">
+                        <span class="fsm-16" style="line-height: 18px;">
+                            {{ field.label }}:
+                        </span>
+                    </td>
+                    <td style="padding: 0.5rem;"> </td>
+                    <td style="padding: 0.5rem;border-bottom: 1px solid #252525;">
+                        <span class="fsm-16" style="line-height: 18px;">
+                            {% if field.type == "email" %}
+                                <a class="fsm-16" href="mailto:{{ field.valueAsString }}" style="color: #2E81BB; text-decoration:none; font-style:normal;">{{ field.valueAsString }}</a>
+                            {% else %}
+                                {{ field.valueAsString }}
+                            {% endif %}
+                        </span>
+                    </td>
+                </tr>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</table>
+{% endblock %}
