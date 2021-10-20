@@ -78,8 +78,6 @@
                 }
             }
         </style>
-
-		<link rel="stylesheet" href="css/main.css" data-inline />
 	</head>
 	<body>
         {% set emailData = craft.app.globals.getSetByHandle('emailLayout') %}
@@ -95,7 +93,7 @@
 						<tr>
 							<td id="email-body" class="column-12 is-first is-last">
 								<table width="100%">
-                                    <tr> <!-- Ethos header -->
+                                    <tr> <!-- Header -->
                                         <td style="background-color: {{ headerBg }}; text-align: center; padding: 10px 0;">
                                             {% if emailLogo %}
                                                 <a href="{{ siteUrl }}">
@@ -103,7 +101,7 @@
                                                 </a>
                                             {% endif %}
                                         </td>
-                                    </tr> <!-- / Ethos header -->
+                                    </tr> <!-- / Header -->
                                     <tr> <!-- Email content -->
                                         <td align="center" bgcolor="{{bodyBg}}" valign="top" style="padding: 20px">
                                             {% block content %}{% endblock %}
