@@ -97,7 +97,7 @@
                                         <td style="background-color: {{ headerBg }}; text-align: center; padding: 10px 0;">
                                             {% if emailLogo %}
                                                 <a href="{{ siteUrl }}">
-                                                    <img width="120" style="height: auto;width:120px;border:0;" src="{{ emailLogo }}" alt="{{ siteName }} Logo" />
+                                                    <img width="120" style="height: auto;width:120px;border:0;" src="{{ siteUrl|slice(0,-1) }}{{ emailLogo }}" alt="{{ siteName }} Logo" />
                                                 </a>
                                             {% endif %}
                                         </td>
